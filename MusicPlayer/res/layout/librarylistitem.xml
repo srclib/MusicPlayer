@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/unchecked"
+    android:id="@+id/libraryListBox" />
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/librarytext"
+	android:layout_toLeftOf="@id/libraryListBox"
+	android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/libraryListText" >
+</TextView>
+</RelativeLayout>

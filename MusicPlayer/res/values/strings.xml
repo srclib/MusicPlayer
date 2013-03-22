@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_title">Welcome to the Music Library</string>
+    <string name="app_name">Music Player</string>
+    <string name="current_title">Welcome to the playlist editor</string>
+    <string name="playlist_title">Welcome to the Playlist Selector</string>
+    <string name="collapse_all">Collapse All</string>
+    <string name="clear_all">Clear All</string>
+    <string name="not_found">No results found.</string>
+    <string name="search_text">Type part of an artist, album or title, then hit enter.</string>
+    <string name="library_loading">Library Loading...</string>
+    <string name="empty_playlist">Nothing selected. Please select some songs from the Library screen.</string>
+    <string name="current_loading">&quot;Playlist Loading...&quot;</string>
+    <string name="nothing_playing">Nothing Playing</string>
+</resources>

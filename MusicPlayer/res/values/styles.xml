@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="green">#00FF00</color>
+	<color name="red">#FF0000</color>
+    <style name="main">
+    	<item name="android:listViewStyle">@style/contextmenu</item>
+    </style>
+    <style name="tight">
+    	<item name="android:textSize">18sp</item>
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_weight">1</item>
+    	<item name="android:background">@drawable/smallbuttonbg</item>
+    </style>
+    <style name="playlist">
+    	<item name="android:divider">#FF404040</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">24sp</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="listview">
+    	<item name="android:divider">#FF666666</item>
+        <item name="android:background">#FF000000</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="wacky">
+        <item name="android:background">#FFFF0000</item>
+        <item name="android:textColor">#FF00FF00</item>
+    </style>
+    <style name="search">
+    	<item name="android:visibility">gone</item>
+    	<item name="android:imeOptions">actionSearch</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_weight">0</item>
+    	<item name="android:singleLine">true</item>
+    </style>
+    <style name="control">
+        <item name="android:background">@color/control</item>
+    </style>
+    <style name="contextmenu">
+        <item name="android:textColor">#FFFFFFFF</item>
+	    <item name="android:background">@color/artistbg</item>
+        <item name="android:dividerHeight">0px</item>
+    </style>
+    <style name="controlbutton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="library">
+        <item name="android:paddingTop">6dp</item>
+    </style>
+	<style name="librarytext">
+        <item name="android:singleLine">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="playlistsong">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/playlistItem"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingTop="6sp"
+  android:paddingBottom="6sp"
+  android:background="@drawable/currentbg1">
+  <TextView android:id="@+id/playlistTV" style="@style/playlist" />
+</LinearLayout>

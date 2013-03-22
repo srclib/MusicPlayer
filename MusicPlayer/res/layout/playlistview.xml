@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/playlistLayout"
+  android:orientation="vertical">
+    <TextView style="@style/control" android:paddingBottom="6sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/playlistInfo" android:text="@string/playlist_title"></TextView>
+	<ListView android:clickable="false" style="@style/listview" android:id="@+id/playlistList" android:dividerHeight="2sp" android:layout_width="fill_parent" android:layout_height="20dp" android:layout_weight="1"></ListView>
+	<LinearLayout style="@style/control" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:enabled="false" android:onClick="onAddPlaylist" android:text="Save As..." android:id="@+id/addPlaylist" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+		<Button android:enabled="false" android:onClick="onSavePlaylist" android:text="Save" android:id="@+id/savePlaylist" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+	</LinearLayout>
+	
+</LinearLayout>

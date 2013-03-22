@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/libraryLayout"
+  android:orientation="vertical">
+    <EditText style="@style/search" android:id="@+id/librarySearch"></EditText>
+    <TextView android:id="@+id/libraryInfo" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+    <ListView style="@style/listview" android:choiceMode="multipleChoice" android:id="@+id/libraryList" android:dividerHeight="2sp" android:layout_width="fill_parent" android:layout_height="20dp" android:layout_weight="1"></ListView>
+    <LinearLayout style="@style/control"  android:padding="4sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0" android:orientation="horizontal">
+    <Button style="@style/tight" android:id="@+id/libraryCollapseAll" android:visibility="gone" android:onClick="collapseall" android:text="Collapse All"></Button>
+    <Button style="@style/tight" android:id="@+id/libraryExpandAll" android:onClick="expandall" android:text="Expand All" ></Button>
+    <Button style="@style/tight" android:id="@+id/libraryClearAll" android:visibility="gone" android:onClick="clearall" android:text="Clear All" ></Button>
+    <Button style="@style/tight" android:id="@+id/librarySelectAll" android:onClick="selectall" android:text="Select All"></Button>
+	</LinearLayout>
+</LinearLayout>

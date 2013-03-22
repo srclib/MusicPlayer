@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/currentLayout" android:orientation="vertical">
+  	<EditText style="@style/search" android:id="@+id/currentSearch"></EditText>
+  	<Button android:id="@+id/CVcompact" android:onClick="setcompact" android:background="@drawable/controlbg" android:drawableTop="@android:drawable/arrow_up_float" android:layout_height="10sp" android:layout_width="fill_parent" ></Button>
+    <LinearLayout style="@style/control" android:id="@+id/ControlsTop" android:layout_weight="0" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+        <TextView android:text="@string/nothing_playing" android:textSize="21sp" android:id="@+id/CVName" android:ellipsize="end" android:scrollHorizontally="true" android:layout_weight="1" android:layout_width="0sp" android:layout_height="fill_parent"></TextView>
+        <LinearLayout android:id="@+id/ControlsOther" android:layout_weight="0" android:layout_height="fill_parent" android:layout_width="wrap_content" android:orientation="vertical">
+        	<Button style="@style/controlbutton" android:background="@drawable/sortbg" android:id="@+id/CVsort" android:onClick="sortPlaylist"></Button>
+        	<Button style="@style/controlbutton" android:background="@drawable/repeat" android:id="@+id/CVrepeat" android:onClick="repeatClick" ></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/control" android:id="@+id/ControlsBottom" android:layout_weight="0" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+        <RelativeLayout android:id="@+id/ControlsMain" android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="0sp">
+        <Button style="@style/controlbutton" android:background="@drawable/playbg" android:onClick="playClick" android:id="@+id/CVplay" android:layout_centerInParent="true"></Button>
+        <Button style="@style/controlbutton" android:background="@drawable/prevbg" android:onClick="prevClick" android:id="@+id/CVprev" android:layout_toLeftOf="@id/CVplay" android:layout_marginRight="40sp"></Button>
+        <Button style="@style/controlbutton" android:background="@drawable/nextbg" android:onClick="nextClick" android:id="@+id/CVnext" android:layout_toRightOf="@id/CVplay" android:layout_marginLeft="40sp"></Button>
+        </RelativeLayout>
+        <Button style="@style/controlbutton" android:background="@drawable/shuffle" android:id="@+id/CVshuffle" android:onClick="shuffleClick" android:layout_weight="0" android:layout_width="40sp" android:layout_height="fill_parent"></Button>
+    </LinearLayout>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="4sp"
+	    style="@style/control" android:id="@+id/ControlsSeek">
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="00:00/00:00"
+	    android:id="@+id/seekText" />
+	<SeekBar xmlns:android="http://schemas.android.com/apk/res/android"
+		android:paddingRight="4sp"
+		android:layout_toLeftOf="@id/seekText"
+		android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/seekBar" />
+	</RelativeLayout>
+	<Button android:id="@+id/CVuncompact" android:onClick="setuncompact" android:visibility="gone" android:background="@drawable/controlbg" android:drawableTop="@android:drawable/arrow_down_float" android:layout_height="16sp" android:layout_weight="0" android:layout_width="fill_parent" ></Button>
+    <TextView android:id="@+id/currentInfo" android:text="@string/current_loading" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+    <ListView style="@style/listview" android:dividerHeight="1px" android:id="@+id/currentList" android:layout_weight="1" android:layout_height="0sp" android:layout_width="fill_parent"></ListView>
+
+</LinearLayout>

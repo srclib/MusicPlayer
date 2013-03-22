@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg1">#000000</color>
+    <color name="bg2">#333333</color>
+    <color name="pressed">#ff6633</color>
+    <color name="songbg">#000000</color>
+    <color name="artistbg">#909090</color>
+    <color name="albumbg">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="control">#222222</color>
+    <color name="playing">#ff6633</color>
+    <color name="textcolor">#ffffff</color>
+</resources>

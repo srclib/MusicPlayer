@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Add to End of Play Queue" 		android:id="@+id/addendplayqueue"></item>
+    <item android:title="Add to Start of Play Queue" 	android:id="@+id/addstartplayqueue"></item>
+    <item android:title="Remove from Play Queue" 		android:id="@+id/removefromplayqueue"></item>
+    <item android:title="Remove from Playlist"			android:id="@+id/removefromplaylist"></item>
+</menu>
